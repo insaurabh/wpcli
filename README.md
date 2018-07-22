@@ -100,3 +100,36 @@ Password: a$hgLg3HeZJsy%sOnsZG!qes
 Success: Updated user 2.
 
 ```
+
+8. Get all theme list. :question:
+
+:heavy_dollar_sign: wp theme list
+```
+ /var/www/html/wordpress  wp theme list
++-----------------+----------+--------+---------+
+| name            | status   | update | version |
++-----------------+----------+--------+---------+
+| twentyfifteen   | inactive | none   | 2.0     |
+| twentyseventeen | active   | none   | 1.6     |
+| twentysixteen   | inactive | none   | 1.5     |
++-----------------+----------+--------+---------+
+
+```
+
+9. Activate a theme. :question:
+
+:heavy_dollar_sign: wp theme activate **themename** ( see name from above list)
+```
+ /var/www/html/wordpress  wp theme activate twentysixteen
+Success: Switched to 'Twenty Sixteen' theme.
+
+```
+
+9. Create child theme. :question:
+
+:heavy_dollar_sign: wp scaffold child-theme **child-theme-name** --parent_theme=**parentthemename** ( see name from above list)
+```
+ /var/www/html/wordpress  wp scaffold child-theme twentysixteen-child --parent_theme=twentyseventeen
+Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'.
+
+```
