@@ -86,8 +86,17 @@ Success: Installed 1 of 1 plugins.
 
 :heavy_dollar_sign: wp user create *username* *useremail*  --role=*rolename*
 ```
- /var/www/html/woo  wp user create inrsaurabh inrsaurabh@gmail.com  --role=author
+ /var/www/html/wordoress  wp user create inrsaurabh inrsaurabh@gmail.com  --role=author
 Success: Created user 2.
 Password: a$hgLg3HeZJsy%sOnsZG!qes
+
+```
+
+7. Update an user password. :question:
+
+:heavy_dollar_sign: wp user update **user_id**  --user_pass=**new_passowrd**
+```
+ /var/www/html/wordoress  wp user update 2 --user_pass=admin@123
+Success: Updated user 2.
 
 ```
