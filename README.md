@@ -133,3 +133,13 @@ Success: Switched to 'Twenty Sixteen' theme.
 Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'.
 
 ```
+
+10. Delete a theme. :question:
+
+:heavy_dollar_sign: wp theme delete **themename** ( see name from above list)
+```
+ /var/www/html/wordpress  wp theme delete **themename**
+Deleted '**themename**' theme.
+Success: Deleted 1 of 1 themes.
+```
+
