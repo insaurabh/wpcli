@@ -142,4 +142,11 @@ Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'
 Deleted '**themename**' theme.
 Success: Deleted 1 of 1 themes.
 ```
+11. Flushes rewrite rules ( permalink updates ). :question:
+
+:heavy_dollar_sign: wp rewrite flush
+```
+ /var/www/html/wordpress  wp rewrite flush
+Success: Rewrite rules flushed.
+```
 
