@@ -142,8 +142,49 @@ Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'
 Deleted '**themename**' theme.
 Success: Deleted 1 of 1 themes.
 ```
+11. Flushes rewrite rules ( permalink updates ). :question:
+
+:heavy_dollar_sign: wp rewrite flush
+```
+ /var/www/html/wordpress  wp rewrite flush
+Success: Rewrite rules flushed.
+```
+
+12. Get dtabase name with list of tables. :question:
+
+:heavy_dollar_sign: wp db check 
+```
+ /var/www/html/wordpress  wp db check 
+db_name.prefix_tableName                           OK
+wppwa.wppwa_comments                               OK
+...................................
+..................................
+Success: Database checked.
+```
+
+13. Update siteurl and home url ( search and replace any string) . :question:
+
+:heavy_dollar_sign: wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid 
+```
+ /var/www/html/wordpress  wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid 
++---------------------+-----------------------+--------------+------+
+| Table               | Column                | Replacements | Type |
++---------------------+-----------------------+--------------+------+
+| wppwa_commentmeta   | meta_key              | 0            | SQL  |
+| wppwa_commentmeta   | meta_value            | 0            | SQL  |
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ wppwa_options        | option_value           | 2            | PHP |
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+| wppwa_users         | user_activation_key   | 0            | SQL  |
+| wppwa_users         | display_name          | 0            | SQL  |
++---------------------+-----------------------+--------------+------+
+
+
+Success: Made 8 replacements.
+```
 
 # Download, Fork, Commit.
 
 Please Download, Fork, & Commit to add more helpfull commands.
-
