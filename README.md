@@ -143,3 +143,7 @@ Deleted '**themename**' theme.
 Success: Deleted 1 of 1 themes.
 ```
 
+# Download, Fork, Commit.
+
+Please Download, Fork, & Commit to add more helpfull commands.
+
