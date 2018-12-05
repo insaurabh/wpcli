@@ -47,7 +47,7 @@ WP-CLI version:	1.5.1
 
 4. Activate a plugin  :question:
 
-:heavy_dollar_sign: wp plugin activate pluginname ( see the name from pugin list as shown in above command)
+:heavy_dollar_sign: wp plugin activate plugin_name ( see the name from plugin list as shown in above command)
 ```
  /var/www/html/wordpress  wp plugin activate hello
 Plugin 'hello' activated.
@@ -94,9 +94,9 @@ Password: a$hgLg3HeZJsy%sOnsZG!qes
 
 7. Update an user password. :question:
 
-:heavy_dollar_sign: wp user update **user_id**  --user_pass=**new_passowrd**
+:heavy_dollar_sign: wp user update **user_id**  --user_pass=**new_password**
 ```
- /var/www/html/wordoress  wp user update 2 --user_pass=admin@123
+ /var/www/html/wordoress  wp user update 2 --user_pass=your_new_password
 Success: Updated user 2.
 
 ```
