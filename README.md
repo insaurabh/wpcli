@@ -5,6 +5,12 @@ Useful wp cli commands for every WordPress Developer. This repo will contain all
 ```
 # With Phar file
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+#and 
+php wp-cli.phar --info
+#and
+chmod +x wp-cli.phar
+#and
+sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
 1. How to check wordpress version :question:
