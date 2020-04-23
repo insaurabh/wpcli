@@ -1,3 +1,4 @@
+
 # wpcli
 Useful wp cli commands for every WordPress Developer. This repo will contain all the useful commands that help WordPress developer to speed up the development process.
 
@@ -190,6 +191,18 @@ Success: Database checked.
 
 Success: Made 8 replacements.
 ```
+
+ 14. How to install Wordpress :question:
+```
+ - mkdir blog
+ - cd blog
+ - wp core download
+ - wp core config --dbhost=your_host_name --dbname=db_prefix --dbuser=username --dbpass=password
+ - wp core install --url=yourwebsite.com --title="Your Blog Title" --admin_name=wordpress_admin_name --admin_password=admin_pwd --admin_email=you@yourwebsite.com
+ - chmod 644 wp-config.php
+ - chmod 775 uploads/
+
+``` 
 
 # Download, Fork, Commit.
 
