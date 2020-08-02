@@ -1,12 +1,13 @@
 
 # wpcli
-Useful wp cli commands for every WordPress Developer. This repo will contain all the useful commands that help WordPress developer to speed up the development process.
+Useful wp cli commands for every WordPress Developer. This repo will contain all the useful commands that help WordPress developer to speed up the development process.For complete list please refer official wp-cli documentation.
 
-# How to install wpcli
+# How to install wpcli :question:
+
 ```
 # With Phar file
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-#and 
+#and
 php wp-cli.phar --info
 #and
 chmod +x wp-cli.phar
@@ -22,9 +23,9 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 ### 2. Check wordpress installation bacis info :question:
 
-:heavy_dollar_sign: wp --info 
+:heavy_dollar_sign: wp --info
 ```
- /var/www/html/wordpress  wp --info      
+ /var/www/html/wordpress  wp --info
 OS:	Linux 4.13.0-45-generic #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018 x86_64
 Shell:	/usr/bin/zsh
 PHP binary:	/usr/bin/php7.0
@@ -33,9 +34,9 @@ php.ini used:	/etc/php/7.0/cli/php.ini
 WP-CLI root dir:	phar://wp-cli.phar
 WP-CLI vendor dir:	phar://wp-cli.phar/vendor
 WP_CLI phar path:	/var/www/html/wordpress
-WP-CLI packages dir:	
-WP-CLI global config:	
-WP-CLI project config:	
+WP-CLI packages dir:
+WP-CLI global config:
+WP-CLI project config:
 WP-CLI version:	1.5.1
 ```
 
@@ -62,6 +63,7 @@ Success: Activated 1 of 1 plugins.
 ```
 
 ### 5. Check status of a plugin  :question:
+
 ```
  /var/www/html/wordpress  wp plugin status hello
 Plugin hello details:
@@ -157,11 +159,11 @@ Success: Deleted 1 of 1 themes.
 Success: Rewrite rules flushed.
 ```
 
-### 14. Get dtabase name with list of tables. :question:
+### 14. Get database name with list of tables. :question:
 
-:heavy_dollar_sign: wp db check 
+:heavy_dollar_sign: wp db check
 ```
- /var/www/html/wordpress  wp db check 
+ /var/www/html/wordpress  wp db check
 db_name.prefix_tableName                           OK
 wppwa.wppwa_comments                               OK
 ...................................
@@ -171,9 +173,9 @@ Success: Database checked.
 
 ### 15. Update siteurl and home url ( search and replace any string) . :question:
 
-:heavy_dollar_sign: wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid 
+:heavy_dollar_sign: wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid
 ```
- /var/www/html/wordpress  wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid 
+ /var/www/html/wordpress  wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid
 +---------------------+-----------------------+--------------+------+
 | Table               | Column                | Replacements | Type |
 +---------------------+-----------------------+--------------+------+
@@ -193,6 +195,7 @@ Success: Made 8 replacements.
 ```
 
  ### 16. How to install Wordpress :question:
+
 ```
  - mkdir blog
  - cd blog
@@ -202,28 +205,31 @@ Success: Made 8 replacements.
  - chmod 644 wp-config.php
  - chmod 775 uploads/
 
-``` 
+```
 
 > To use next 3 commands include [these commands](https://github.com/insaurabh/wpcli/blob/master/custom-command.md) in your theme.
 
  ### 17. How to UPDATE an option :question:
+
 ```
  - wp option update start_of_weeks 0
 
-``` 
+```
 
  ### 18. How to DELETE an option :question:
+
 ```
  - wp option delete start_of_weeks
 
-``` 
+```
 
  ### 19. How to ADD an option :question:
+ 
 ```
  - wp option add option_name option_value
- 
-``` 
+
+```
 
 # Download, Fork, Commit.
 
-Please Download, Fork, & Commit to add more helpfull commands.
+Please Download, Fork, & Commit to add more helpful commands.
