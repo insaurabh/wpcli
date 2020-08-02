@@ -204,6 +204,26 @@ Success: Made 8 replacements.
 
 ``` 
 
+> To use next 3 commands include [these commands](https://github.com/insaurabh/wpcli/blob/master/custom-command.md) in your theme.
+
+ 15. How to UPDATE an option :question:
+```
+ - wp option update start_of_weeks 0
+
+``` 
+
+ 16. How to DELETE an option :question:
+```
+ - wp option delete start_of_weeks
+
+``` 
+
+ 17. How to ADD an option :question:
+```
+ - wp option add option_name option_value
+ 
+``` 
+
 # Download, Fork, Commit.
 
 Please Download, Fork, & Commit to add more helpfull commands.
