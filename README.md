@@ -230,6 +230,13 @@ Success: Made 8 replacements.
 
 ```
 
+ ### 19. How to get the plugin list which have update available by wp cli :question:
+ 
+```
+ -  wp plugin list --update=available
+
+```
+
 # Download, Fork, Commit.
 
 Please Download, Fork, & Commit to add more helpful commands.
