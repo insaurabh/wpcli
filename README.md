@@ -2,7 +2,7 @@
 # wpcli
 Useful wp cli commands for every WordPress Developer. This repo will contain all the useful commands that help WordPress developer to speed up the development process.For complete list please refer official wp-cli documentation.
 
-# How to install wpcli :question:
+# How to install wpcli:question:
 
 ```
 # With Phar file
@@ -15,13 +15,13 @@ chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
-### 1. How to check wordpress version :question:
+### 1. How to check wordpress version:question:
 
 :heavy_dollar_sign: wp core version
 ```
 4.9.7
 ```
-### 2. Check wordpress installation bacis info :question:
+### 2. Check wordpress installation bacis info:question:
 
 :heavy_dollar_sign: wp --info
 ```
@@ -40,7 +40,7 @@ WP-CLI project config:
 WP-CLI version:	1.5.1
 ```
 
-### 3. Get list of all plugins with status :question:
+### 3. Get list of all plugins with status:question:
 
 :heavy_dollar_sign: wp plugin list
 ```
@@ -53,7 +53,7 @@ WP-CLI version:	1.5.1
 +---------+----------+-----------+---------+
 ```
 
-### 4. Activate a plugin  :question:
+### 4. Activate a plugin:question:
 
 :heavy_dollar_sign: wp plugin activate plugin_name ( see the name from plugin list as shown in above command)
 ```
@@ -62,7 +62,7 @@ Plugin 'hello' activated.
 Success: Activated 1 of 1 plugins.
 ```
 
-### 5. Check status of a plugin  :question:
+### 5. Check status of a plugin:question:
 
 ```
  /var/www/html/wordpress  wp plugin status hello
@@ -76,7 +76,7 @@ Plugin hello details:
 ```
 
 
-### 6. Install a plugin and activate it :question:
+### 6. Install a plugin and activate it:question:
 
 :heavy_dollar_sign: wp plugin install woocommerce --activate
 ```
@@ -91,7 +91,7 @@ Plugin 'woocommerce' activated.
 Success: Installed 1 of 1 plugins.
 ```
 
-### 7. Create a new user. :question:
+### 7. Create a new user:question:
 
 :heavy_dollar_sign: wp user create *username* *useremail*  --role=*rolename*
 ```
@@ -101,7 +101,7 @@ Password: a$hgLg3HeZJsy%sOnsZG!qes
 
 ```
 
-### 8. Update an user password. :question:
+### 8. Update an user password:question:
 
 :heavy_dollar_sign: wp user update **user_id**  --user_pass=**new_password**
 ```
@@ -110,7 +110,7 @@ Success: Updated user 2.
 
 ```
 
-### 9. Get all theme list. :question:
+### 9. Get all theme list:question:
 
 :heavy_dollar_sign: wp theme list
 ```
@@ -125,7 +125,7 @@ Success: Updated user 2.
 
 ```
 
-### 10. Activate a theme. :question:
+### 10. Activate a theme:question:
 
 :heavy_dollar_sign: wp theme activate **themename** ( see name from above list)
 ```
@@ -134,7 +134,7 @@ Success: Switched to 'Twenty Sixteen' theme.
 
 ```
 
-### 11. Create child theme. :question:
+### 11. Create child theme:question:
 
 :heavy_dollar_sign: wp scaffold child-theme **child-theme-name** --parent_theme=**parentthemename** ( see name from above list)
 ```
@@ -143,7 +143,7 @@ Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'
 
 ```
 
-### 12. Delete a theme. :question:
+### 12. Delete a theme:question:
 
 :heavy_dollar_sign: wp theme delete **themename** ( see name from above list)
 ```
@@ -151,7 +151,7 @@ Success: Created '/var/www/html/wordpress/wp-content/themes/twentysixteen-child'
 Deleted '**themename**' theme.
 Success: Deleted 1 of 1 themes.
 ```
-### 13. Flushes rewrite rules ( permalink updates ). :question:
+### 13. Flushes rewrite rules ( permalink updates ):question:
 
 :heavy_dollar_sign: wp rewrite flush
 ```
@@ -159,7 +159,7 @@ Success: Deleted 1 of 1 themes.
 Success: Rewrite rules flushed.
 ```
 
-### 14. Get database name with list of tables. :question:
+### 14. Get database name with list of tables:question:
 
 :heavy_dollar_sign: wp db check
 ```
@@ -171,7 +171,7 @@ wppwa.wppwa_comments                               OK
 Success: Database checked.
 ```
 
-### 15. Update siteurl and home url ( search and replace any string) . :question:
+### 15. Update siteurl and home url ( search and replace any string):question:
 
 :heavy_dollar_sign: wp search-replace 'http://localhost/projectname' 'http://projectname.com' --skip-columns=guid
 ```
@@ -194,7 +194,7 @@ Success: Database checked.
 Success: Made 8 replacements.
 ```
 
- ### 16. How to install Wordpress :question:
+ ### 16. How to install Wordpress:question:
 
 ```
  - mkdir blog
@@ -209,28 +209,28 @@ Success: Made 8 replacements.
 
 > To use next 3 commands include [these commands](https://github.com/insaurabh/wpcli/blob/master/custom-command.md) in your theme.
 
- ### 17. How to UPDATE an option :question:
+ ### 17. How to UPDATE an option:question:
 
 ```
  - wp option update start_of_weeks 0
 
 ```
 
- ### 18. How to DELETE an option :question:
+ ### 18. How to DELETE an option:question:
 
 ```
  - wp option delete start_of_weeks
 
 ```
 
- ### 19. How to ADD an option :question:
+ ### 19. How to ADD an option:question:
  
 ```
  - wp option add option_name option_value
 
 ```
 
- ### 19. How to get the plugin list which have update available by wp cli :question:
+ ### 19. How to get the plugin list which have update available by wp cli:question:
  
 ```
  -  wp plugin list --update=available
