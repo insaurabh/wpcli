@@ -237,6 +237,13 @@ Success: Made 8 replacements.
 
 ```
 
+### 19. How to delete a post type :question:
+ 
+```
+ -  wp post delete $(wp post list --post_type='property' --format=ids) --force
+
+```
+
 # Download, Fork, Commit.
 
 Please Download, Fork, & Commit to add more helpful commands.
